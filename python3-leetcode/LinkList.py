@@ -105,12 +105,12 @@ class LinkList(object):
 		
 	def search(self,item):
         """链表查找节点是否存在，并返回True或者False"""
-        cur = self._head
-        while cur != None:
-            if cur.item == item:
-                return True
-            cur = cur.next
-        return False
+            cur = self._head
+            while cur != None:
+                if cur.item == item:
+                    return True
+                cur = cur.next
+            return False
 		
 		
 	def reverseList(self, head):
@@ -124,16 +124,16 @@ class LinkList(object):
 		return pre
 		
 	def reverse(self, head):
-        if head is None: return None
-        p = head
-        cur = None
-        pre = None
-        while p is not None:
-            cur = p.next
-            p.next = pre
-            pre = p
-            p = cur
-        return pre
+            if head is None: return None
+            p = head
+            cur = None
+            pre = None
+            while p is not None:
+            	cur = p.next
+            	p.next = pre
+                pre = p
+                p = cur
+            return pre
 		
 		
 		
